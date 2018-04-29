@@ -144,7 +144,7 @@ cat $medsFilteredTmpFile | awk -F'\t' '{print $3"\t"$2"\t"$1"\t"$4}' | sort -uf 
 # xxx move this into arguments
 mapFile=map.mdctn-dose-units-drug
 mapErrs=errs
-awk -F'\t' '{print $1"\t"$3"\t"$4"\t"$5}' $outputFile |./parse.pl > $mapFile  2> $mapErrs;
+awk -F'\t' '{print $1"\t"$3"\t"$4"\t"$5}' $outputFile |${ROOT}/src/parse.pl > $mapFile  2> $mapErrs;
 # xxx inspect mapErrs
 
 echo "["`date +"%Y-%m-%d %H:%M:%S"`"]""...created $outputFile, $mapFile, $mapErrs"
