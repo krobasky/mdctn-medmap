@@ -2,7 +2,7 @@
 # Quick Start:
 `./src/pipeline.sh`  
   _creates_: `map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`  
-  _from_: `../rwe/CONCEPT_DIMENSION.csv`  
+  _from_: `CONCEPT_DIMENSION.csv`  
   _using_: `src/pipeline.sh`
 
 **OUTPUT**: `map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`  
