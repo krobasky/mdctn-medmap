@@ -1,12 +1,12 @@
 
 #Quick Start:
 `./src/pipeline.sh`
-  _creates_: `map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`
-  _from_: `../rwe/CONCEPT_DIMENSION.csv`
+  _creates_: `map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`  
+  _from_: `../rwe/CONCEPT_DIMENSION.csv`  
   _using_: `src/pipeline.sh`
 
-**OUTPUT**: `map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`
-Tab-delimited file
+**OUTPUT**: `map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`  
+Tab-delimited file  
 _Columns:_
 ```
 | Col | Name     | Description                                                                                         |
@@ -21,6 +21,6 @@ _Columns:_
 |     |		       |  	e.g., 245314;745679;                                                                             |
 | 5   |  names   |semi-colon delimited list of the names of each MDCTN as found in the CONCEPT_DIMENSION.csv           |
 ```
-_Directories:_
-`src`    : all programs, incidental scripts, test cases and teset data
+_Directories:_  
+`src`    : all programs, incidental scripts, test cases and teset data  
 `config` : configuration files here
