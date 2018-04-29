@@ -15,7 +15,7 @@ display_usage() {
     echo -e "
 Usage:  $(basename $0) [-t <med-targets>] [-c <med-codes>] [-h]
   -t med-targets	Tab-delimited, manually curated list of interesting drugs, paired to their most generic RxCUI [$dMedTargets]
-  -c med-codes		i2B2 export from NCTraC [$dMedCodes]
+  -c med-codes		i2B2 export from NCTraCS [$dMedCodes]
   -p problem-codes	codes that have identified problems and don't appear in i2B2 observation data for analysis [$dProblemCodes]
   -o output		where to put the file (tsv mapping, 
                   	cols:MDCTN, general-RxCUIs, general-names,subRxCUIs, subNames []
