@@ -1,20 +1,24 @@
 
 # Quick Start:
 
-`./src/pipeline.sh`  
+`./src/pipeline.sh --help`  
+
+## Summary
 
   _outputs_:  
 + `map.mdctn-dose-units-drug`  
 + `map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`  
 
   _inputs_:  
-  -t med-targets        Tab-delimited, manually curated list of interesting drugs, paired to their most generic RxCUI [config/map.medTarget-RxCUI]
-  -c med-codes          i2B2 export
-  -p problem-codes      codes that have identified problems and don't appear in i2B2 observation data for analysis [config/problem-codes.txt]
++  -t med-targets        Tab-delimited, manually curated list of interesting drugs, paired to their most generic RxCUI [config/map.medTarget-RxCUI]
++  -c med-codes          i2B2 export
++  -p problem-codes      codes that have identified problems and don't appear in i2B2 observation data for analysis [config/problem-codes.txt]
+
+## Details
  
 **OUTPUTS**: 
 
-`map.mdctn-dose-units-drug`  
++ `map.mdctn-dose-units-drug`  
 Tab-delimited file  
 _Columns:_
 ```
@@ -30,7 +34,7 @@ _Columns:_
 |     |	         |    e.g., prednisone                                                                                 |
 ```
 
-`map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`  
++ `map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`  
 Tab-delimited file  
 _Columns:_
 ```
@@ -89,7 +93,19 @@ _Columns:_
 ASCII list of codes that have identified problems and that don't appear in i2B2 observation data for analysis  
 e.g., `config/problem-codes.txt`  
 
-**Directories:**
+## Directories:
 
 `src`    : all programs, incidental scripts, test cases and teset data  
 `config` : configuration files here
+
+## Dependencies:
+Use `sudo cpan install <dependency>` to ensure each of the following are installed:  
++ Data:Dumper
++ File::Basename
++ Cwd
++ Getopt::Long
++ Switch
++ JSON
++ MIME::Base64
++ REST::Client
+
