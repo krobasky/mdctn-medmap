@@ -5,14 +5,14 @@
 
 ## Summary
 
-  _outputs_:  
+_outputs_:  
 + `map.mdctn-dose-units-drug`  
 + `map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames`  
 
-  _inputs_:  
-+  -t med-targets        Tab-delimited, manually curated list of interesting drugs, paired to their most generic RxCUI [config/map.medTarget-RxCUI]
-+  -c med-codes          i2B2 export
-+  -p problem-codes      codes that have identified problems and don't appear in i2B2 observation data for analysis [config/problem-codes.txt]
+_inputs_:  
++  -t *med-targets*        Tab-delimited, manually curated list of interesting drugs, paired to their most generic RxCUI [config/map.medTarget-RxCUI]
++  -c *med-codes*          i2B2 export
++  -p *problem-codes*      codes that have identified problems and don't appear in i2B2 observation data for analysis [config/problem-codes.txt]
 
 ## Details
  
