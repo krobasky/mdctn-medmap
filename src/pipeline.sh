@@ -148,7 +148,7 @@ awk -F'\t' '{print $1"\t"$3"\t"$4"\t"$5}' $outputFile |${ROOT}/src/parse.pl > $m
 # xxx inspect mapErrs
 
 echo "["`date +"%Y-%m-%d %H:%M:%S"`"]""...created $outputFile, $mapFile, $mapErrs"
-if [$debug -eq 1]; then 
+if [ $debug -eq 1 ]; then 
     echo "  [debug] also created: "
     echo "  [debug]   $medsTmpfile"
     echo "  [debug]   $medsFilteredTmpFile"
