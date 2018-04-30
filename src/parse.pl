@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# awk -F'\t' '{print $1"\t"$3"\t"$4"\t"$5}' ../map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames |./parse4.pl > check.this
+# awk -F'\t' '{print $1"\t"$3"\t"$4"\t"$5}' ../map.MDCTN-genRxCUIs-genNames-subRxCUIs-subNames |./parse.pl > check.this
 #
 
 use Data::Dumper;
